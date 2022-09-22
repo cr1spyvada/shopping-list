@@ -1,0 +1,50 @@
+$border: 1px solid green;
+.App {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  background-color: rgb(74 222 128);
+  align-items: center;
+  width: 100vw;
+  justify-content: space-around;
+}
+.sort-container {
+  font-size: large;
+  select {
+    font-size: larger;
+    padding: 0.2em;
+  }
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.filter-container {
+  min-width: 30vw;
+  height: 80vh;
+  position: sticky;
+  overflow: scroll;
+  border: $border;
+  padding: 1em;
+  font-size: large;
+  .title input {
+    padding: 1em;
+    width: 75%;
+  }
+}
+
+.tile-container {
+  width: 100%;
+  margin-left: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem 0.5rem;
+  overflow: scroll;
+}

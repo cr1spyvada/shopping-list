@@ -1,0 +1,23 @@
+.tile {
+  border: 1px solid blue;
+  width: 45vh;
+  height: 70vh;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+img {
+  height: 40vh;
+  max-width: 45vh;
+}
+.details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
